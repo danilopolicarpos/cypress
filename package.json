@@ -7,8 +7,8 @@
     "open": "./node_modules/.bin/cypress open",
     "test": "./node_modules/.bin/cypress run",
     "local_browser": "./node_modules/.bin/cypress run --headed",
-    "chrome": "./node_modules/.bin/cypress run -b chrome --headless",
-    "features": "./node_modules/.bin/cypress run --features ./cypress/integration/features/"
+    "chrome": "./node_modules/.bin/cypress run -b chrome --headless"
+  
   },
   "author": "Danilo Policarpo",
   "license": "ISC",
