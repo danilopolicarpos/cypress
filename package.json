@@ -1,0 +1,24 @@
+{
+  "name": "cypress_qa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open": "./node_modules/.bin/cypress open",
+    "test": "./node_modules/.bin/cypress run",
+    "local_browser": "./node_modules/.bin/cypress run --headed",
+    "chrome": "./node_modules/.bin/cypress run -b chrome --headless",
+    "features": "./node_modules/.bin/cypress run --features ./cypress/integration/features/"
+  },
+  "author": "Danilo Policarpo",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+  
+
+}
