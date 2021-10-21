@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "open": "./node_modules/.bin/cypress open",
-    "test": "./node_modules/.bin/cypress run",
     "local_browser": "./node_modules/.bin/cypress run --headed",
     "chrome": "./node_modules/.bin/cypress run -b chrome",
     "report": "node cucumber-html-report.js",
-    "testar": "npm run chrome && npm run report"
+    "test": "npm run chrome && npm run report"
   },
   "author": "Danilo Policarpo",
   "license": "ISC",
