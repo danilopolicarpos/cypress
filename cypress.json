@@ -1,5 +1,5 @@
 {
     "testFiles": "**/*.feature",
-    "baseUrl": "http://www.google.com.br",
-    "video":false
+    "baseUrl": "http://www.google.com.br"
+
 }

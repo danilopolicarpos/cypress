@@ -7,18 +7,25 @@
     "open": "./node_modules/.bin/cypress open",
     "test": "./node_modules/.bin/cypress run",
     "local_browser": "./node_modules/.bin/cypress run --headed",
-    "chrome": "./node_modules/.bin/cypress run -b chrome --headless"
-  
+    "chrome": "./node_modules/.bin/cypress run -b chrome",
+    "report": "node cucumber-html-report.js",
+    "testar": "npm run chrome && npm run report"
   },
   "author": "Danilo Policarpo",
   "license": "ISC",
   "devDependencies": {
+    "cucumber-html-reporter": "^5.5.0",
     "cypress": "^8.6.0",
-    "cypress-cucumber-preprocessor": "^4.3.0"
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "multiple-cucumber-html-reporter": "^1.18.0"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
-  
-
 }
