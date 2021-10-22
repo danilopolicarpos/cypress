@@ -10,8 +10,8 @@ report.generate({
         },
         device: "Local test machine",
         platform: {
-            name: "windows",
-            version: "10",
+            name: "Mac",
+            version: "10.15.7",
         },
     },
 });
